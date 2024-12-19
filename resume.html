@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <h2>Shane B. Pangilinan</h2>
+        </div>
+        <div class="social-links">
+            <a href="#"> <i class="fab fa-facebook"></i></a>
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="ido.html">What I do</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="shanegradpic.jpg" alt="">
+                    <h2>Shane B. Pangilinan</h2>
+                </div>
+                <ul class="nav">
+                    <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="ido.html">What I do</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="social">
+                    <a href="#"> <i class="fab fa-facebook"></i></a>
+                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            
+            <div class="profile">
+                <img src="shanegradpic.jpg" alt="error" height="125px" width="130px" border="5px">
+                <hr>
+                <div class="info">
+                    <h2>Information</h2>
+                    <ul>
+                        <li><b>Name:</b> Shane Bernal. Pangilinan</li>
+                        <li><b>Age:</b> 22 Years old</li>
+                        <li><b>Height:</b> 5'3</li>
+                        <li><b>Weight:</b> 40kg</li>
+                        <li><b>Birthday:</b> July 8, 2002</li>
+                        <li><b>Address:</b> Mabalor, Ibaan, Batangas</li>
+                        <li><b>Place of Birth:</b> Batangas Regional Hospital</li>
+                        <li><b>Citizenship:</b> Filipino</li>
+                        <li><b>Civil Status:</b> Single</li>
+                        <li><b>Religion:</b> Catholic</li>
+                        <li><b>Blood Type:</b> Type O</li>
+                    </ul>
+                    <hr>
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li><b>Cell No.:</b> 09612697048</li>
+                        <li><b>Email Address:</b> pangilinanshane2002@gmail.com</li>
+                        <li><b>Address:</b> Mabalor, Ibaan, Batangas</li>
+                    </ul>
+                    <hr>
+                    <h2>Skills</h2>
+                    <h2>Technical Skills</h2>
+                    <ul>
+                        <li>Data Analytics using Excel, Power BI, SQL, R, Python (NumPy)</li>
+                        <li>Web Designing using HTML and CSS</li>
+                        <li>Basic Windows Hardware troubleshooting</li>
+                    </ul>
+                    <h2>Other Skills</h2>
+                    <ul>
+                        <li>Can work under pressure</li>
+                        <li>Can adopt new environment</li>
+                        <li>Willing to learn new skills</li>
+                        <li>Can lead a team</li>
+                        <li>Flexible</li>
+                    </ul>
+                    <hr>
+                    <h2>Accomplishments</h2>
+                    <ul>
+                        <li>Class representative A.Y 2022 BSIT 211</li>
+                        <li>Attended seminars regarding Data Science, Data Analytics, AI and Cyber Security</li>
+                    </ul>
+                    <hr>
+                    <h2>Educational Background</h2>
+                    
+                    <table style="width: 1200px;" border="1">
+                       <tr>
+                        <th colspan="2">Elementary</th>
+                        <th colspan="2">Highschool</th>
+                        <th>College</th>
+                       </tr>
+                       <tr>
+                        <td>Luyang Elementary School</td>
+                        <td>Mabalor-Catandala Elementary School</td>
+                        <td>Dr. Juan A. Pastor Memorial National Highschool</td>
+                        <td>Dr. Juan A. Pastor Memorial National Highschool</td>
+                        <td>Westmead International School</td>
+                       </tr>
+                       <tr>
+                        <td>Grade 1</td>
+                        <td>Grade 2-Grade 6</td>
+                        <td>Grade 7 - Grade 10</td>
+                        <td>Grade 11 - Grade 12 <br> (GAS)</td>
+                        <td>1st Year - 4th Year <br> BS Information Technology</td>
+                       </tr>
+                    </table>
+                 </div>
+                 <p><b>2024</b></p>
+               </div> 
+
+        </div>
+    </div>
+
+            
+
+<script src="script.js">
+    let menuicon=document.querySelector(".menu-icon");
+    let navbar=document.querySelector(".navbar");
+    let icon=document.querySelector(".menu-icon i");
+
+    menuicon.addEventListener("click",function(){
+        navbar.classList.toggle("open");
+        if(icon.classList.contains("fa fa-bars"))
+    {
+        icon.classlist.remove("fa-bars");
+        icon.classlist.add("fa-xmark");
+    }
+    else{
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-xmark");
+    }
+    })
+</script>
+
+</body>
+</html>
